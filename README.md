@@ -52,4 +52,4 @@ python app.py
 
 ## 📜 LICENSE
 
-[MIT](https://github.com/sameersrivastava13/Vaccine-Tracker-App.git/main/LICENSE)
+[MIT](https://github.com/sameersrivastava13/Vaccine-Tracker-App/blob/main/LICENSE)
