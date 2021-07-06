@@ -20,8 +20,12 @@ The data is sourced on a real-time basis from the CoWIN API, which is the offici
 
 
 ## 🏁 Technology Stack
-
-* [Flask](https://github.com/pallets/flask)
+<p align="center">
+<img height="200" width ="200" src = "https://github.com/Tejas1510/Hacking-Scripts/blob/main/assets/pythonlogo.jfif"></img>
+<img height="200" width ="300" src = "https://github.com/Tejas1510/Hacking-Scripts/blob/main/assets/javascriptlogo.png"></img>
+<img height="200" width ="200" src = "https://github.com/Tejas1510/Hacking-Scripts/blob/main/assets/javalogo.png"></img>
+<img height="200" width ="400" src = "https://github.com/Tejas1510/Hacking-Scripts/blob/main/assets/htmllogo.jfif"></img>
+</p>* [Flask](https://github.com/pallets/flask)
 * [HTML](https://www.w3.org/TR/html52/)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Bootstrap](https://getbootstrap.com/)
