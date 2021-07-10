@@ -9,7 +9,7 @@ DevIncept is an 30 day open source program helping the student community learn a
 
 ## 🎯 Purpose of the Project
 
-With more cases piling up in the country, experts have appealed to people to get themselves vaccinated at the earliest. The studies have shown that even people, who have received just one jab can have enough immunity to endure Covid-19 and there there is less risk of getting into a serious condition.
+With more cases piling up in the country, experts have appealed to people to get themselves vaccinated at the earliest. The studies have shown that even people, who have received just one job can have enough immunity to endure Covid-19 and there is less risk of getting into a serious condition.
 
 However, the state-run Co-WIN website, which offers people to get appointments for vaccination at  the nearest health centres, is inundated with millions of requests. This has caused the website to crash and sometimes show an error message.
 
