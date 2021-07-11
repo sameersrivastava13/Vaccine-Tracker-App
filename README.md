@@ -54,6 +54,13 @@ python app.py
 
 5. Go to ` http://127.0.0.1:5000/` and enjoy the application.
 
+
+
+## CONTRIBUTORS
+<a href="https://github.com/sameersrivastava13/Vaccine-Tracker-App/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=sameersrivastava13/Vaccine-Tracker-App" />
+</a>
+
 ## 📜 LICENSE
 
 [MIT](https://github.com/sameersrivastava13/Vaccine-Tracker-App/blob/main/LICENSE)
