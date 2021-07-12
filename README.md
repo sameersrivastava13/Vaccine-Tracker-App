@@ -64,4 +64,5 @@ python app.py
 
 ## 📜 LICENSE
 <img width=35% src="https://media.tenor.com/images/68ecdcb63296f1db6532bf5b83051da9/tenor.gif"></p>
+
 [MIT](https://github.com/sameersrivastava13/Vaccine-Tracker-App/blob/main/LICENSE)
