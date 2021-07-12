@@ -58,7 +58,7 @@ python app.py
 ## Project Maintainer
 <table>
   <tbody><tr>
-    <td align="center"><a href="https://github.com/sameersrivastava13"><img alt="" src="https://avatars.githubusercontent.com/u/sameersrivastava13" width="130px;"><br><sub><b>
+    <td align="center"><a href="https://github.com/sameersrivastava13"><img alt="" src="https://avatars.githubusercontent.com/sameersrivastava13" width="130px;"><br><sub><b>
  Sameer Srivastava </b></sub></a><br><a href="" title="Code">💻 </a></td></a></td>
   </tr>
 </tbody></table>
