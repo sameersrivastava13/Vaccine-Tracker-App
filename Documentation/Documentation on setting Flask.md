@@ -63,14 +63,14 @@ Some distributions will install automatically when installing Flask. So don't be
 * Create a project folder and within that create **venv** folder
 * We can do the above task by executing some commands in command prompt.
 
-![windowsn.png](attachment:windowsn.png)
+![windowsn.png](mdimages/windowsn.png)
 
 **Step-2: Activate the environment**
 
 * Before working on a project, we have to activate corresponding environment
 * Activate the environment by executing following command.
 
-![winact.png](attachment:winact.png)
+![winact.png](mdimages/winact.png)
 
 * Whenever environment is activated, prompt will change to name of activated environment.
 
@@ -86,15 +86,15 @@ Installing flask in Linux / OSX is similar to windows installation. But some com
 
 **Step-1: Create a virtual environment**
 
-![macoslinux.png](attachment:macoslinux.png)
+![macoslinux.png](mdimages/macoslinux.png)
 
 **Step-2: Activate the environment**
 
-![macact.png](attachment:macact.png)
+![macact.png](mdimages/macact.png)
 
 **Step-3: Install Flask in Activated environment**
 
-![flaskin.png](attachment:flaskin.png)
+![flaskin.png](mdimages/flaskin.png)
 
 *We have installed the flask successfully. Now we will make a simple web application using flask.*
 
@@ -112,7 +112,7 @@ Then start write the below code for your first flask web application
 
 **app.py**
 
-![aapy.JPG](attachment:aapy.JPG)
+![aapy.JPG](mdimages/aapy.JPG)
 
 #### What code trying to say ?
 
@@ -139,27 +139,28 @@ Then start write the below code for your first flask web application
 
 **Run the following commands if it is Bash**:
 
-![bashh.png](attachment:bashh.png)
+![bashh.png](mdimages/bashh.png)
+
 **here we named the file as hello.py so We will assign hello to the environment variable like** *set FLASK_APP=hello*
 
 **Run the following commands if it is CMD**:
 
-![CMDD.png](attachment:CMDD.png)
+![CMDD.png](mdimages/CMDD.png)
 
 **Run the following commands if it is Powershell:**
 
-![powe.png](attachment:powe.png)
+![powe.png](mdimages/powe.png)
 
 **Here We can see what it look likes in a command prompt typically:**
 
-![image_2021-07-12_114829.png](attachment:image_2021-07-12_114829.png)
+![image_2021-07-12_114829.png](mdimages/cmd1.JPG)
 
 **Now Open the browser and go to the URL** http://127.0.0.1:5000/hello. 
 * Since we route the app when **/hello** is passed as mentioned in code, we add **/hello** to the url at the end. we can do as many routes we want.
 
 **Then we will see the Hello, World! in the page as output shown below**
 
-![image_2021-07-12_115038.png](attachment:image_2021-07-12_115038.png)
+![image_2021-07-12_115038.png](mdimages/browsr.JPG)
 
 **We can explore more things when going on with flask. It's simple and powerful to implement web applications with Flask**
 
