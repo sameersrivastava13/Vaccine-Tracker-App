@@ -55,6 +55,13 @@ python app.py
 
 5. Go to ` http://127.0.0.1:5000/` and enjoy the application.
 
+## PROJECT MAINTAINER
+<table>
+  <tbody><tr>
+    <td align="center"><a href="https://github.com/Harshal0902"><img alt="" src="https://avatars.githubusercontent.com/sameersrivastava13" width="130px;"><br><sub><b>
+ Sameer Srivastava </b></sub></a><br><a href="" title="Code">💻 </a></td></a></td>
+  </tr>
+</tbody></table>
 
 
 ## CONTRIBUTORS
