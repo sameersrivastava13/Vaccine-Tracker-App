@@ -17,14 +17,21 @@ The application will help user check the availability of vaccination slots for a
 
 The data is sourced on a real-time basis from the CoWIN API, which is the official government platform to book slots for vaccination.
 
+## PROJECT MAINTAINER -> **Sameer Srivastava**               
+<img height="300" width ="300" src =https://user-images.githubusercontent.com/56405152/125987679-e14dc56b-ffdb-4fbd-bf8c-c09008c52e89.png>
+
+
+## PROJECT MENTOR -> **Sejal Panjwani** 
+<img height="300" width ="300" src =https://user-images.githubusercontent.com/56405152/125987719-d5088195-60c3-4c6c-be7c-d102d6dc2918.png>
+
 
 
 ## 🏁 Technology Stack
 <p align="center">
-<img height="200" width ="200" src = "https://github.com/Tejas1510/Hacking-Scripts/blob/main/assets/pythonlogo.jfif"></img>
-<img height="200" width ="300" src = "https://github.com/Tejas1510/Hacking-Scripts/blob/main/assets/javascriptlogo.png"></img>
-<img height="200" width ="400" src = "https://github.com/pallets/flask/blob/main/artwork/logo-full.svg"></img>
-<img height="200" width ="400" src = "https://github.com/Tejas1510/Hacking-Scripts/blob/main/assets/htmllogo.jfif"></img>
+<img height="200" width ="200" src = "https://user-images.githubusercontent.com/56405152/125989051-99f28b39-b160-4d7b-ab7b-249479f94890.png"></img>
+<img height="200" width ="300" src = "https://user-images.githubusercontent.com/56405152/125989130-6948a657-e059-49c4-85e3-4ec3f90f4deb.png"></img>
+<img height="200" width ="200" src = "https://user-images.githubusercontent.com/56405152/125989579-a00eb116-84eb-4bb8-a5e5-5cccfc24de9c.png"></img>
+<img height="200" width ="200" src = "https://user-images.githubusercontent.com/56405152/125989742-c06ee9d6-0663-4706-a600-bc9dd4f5b34e.png"></img>
 </p>
 
 
@@ -137,9 +144,6 @@ git push -u origin <your_branch_name>
 
 <p align="center"><img src="https://media.giphy.com/media/5mCQOcUfywmyI/giphy.gif" width=35%></p>
 
-<p align ="center">PROJECT MAINTAINER - 
-Sameer Srivastava<br>
-<p align = "center"><img src = "https://avatars.githubusercontent.com/u/56088741?v=4" width=300></p>
 
 
 
