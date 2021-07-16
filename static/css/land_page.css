@@ -76,3 +76,16 @@ h2{
     width: 70px;
     padding-left: 10px;
 }
+
+.scroll-top {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 15px;
+    left: 20px;
+    display: none;
+  }
+  .scroll-top i {
+    display: inline-block;
+    color: #fff;
+  }
