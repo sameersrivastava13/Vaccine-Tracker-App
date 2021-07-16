@@ -137,6 +137,9 @@ git push -u origin <your_branch_name>
 
 <p align="center"><img src="https://media.giphy.com/media/5mCQOcUfywmyI/giphy.gif" width=35%></p>
 
+<p align ="center">PROJECT MAINTAINER - 
+Sameer Srivastava<br>
+<p align = "center"><img src = "https://avatars.githubusercontent.com/u/56088741?v=4" width=300></p>
 
 
 
