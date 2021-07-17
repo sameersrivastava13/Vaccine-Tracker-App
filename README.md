@@ -1,3 +1,4 @@
+
 # Vaccine Tracker Application - Pan India 💉
 
 ![1](https://user-images.githubusercontent.com/56088741/123548760-cd4d1280-d783-11eb-8654-000fd6fa1f26.gif)
@@ -18,7 +19,7 @@ The application will help user check the availability of vaccination slots for a
 The data is sourced on a real-time basis from the CoWIN API, which is the official government platform to book slots for vaccination.
 
 ## PROJECT MAINTAINER -> **Sameer Srivastava**               
-<img height="300" width ="300" src =https://user-images.githubusercontent.com/56405152/125987679-e14dc56b-ffdb-4fbd-bf8c-c09008c52e89.png>
+<img height="300" width ="300" src =https://user-images.githubusercontent.com/56405152/126027078-4513ec8c-2939-49f0-81a2-201407689bc5.png>
 
 
 ## PROJECT MENTOR -> **Sejal Panjwani** 
