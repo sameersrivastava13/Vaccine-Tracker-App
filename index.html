@@ -26,11 +26,13 @@
             <a href="index.html">
               <h1>Vaccine Tracker</h1>
             </a>
+            <p style="display: flex;
+            justify-content: center">Your safety is our goal.</p>
           </div>
           <nav>
             <ul id="MenuItems">
               <li><a href="index.html">Home</a></li>
-              <li><a href="contact.html">Latest News</a></li>
+              <li><a href="news.html">Latest News</a></li>
               <li><a href="contact.html">Contact</a></li>
               <li>
                 <select name="" id="search" onchange="location = this.value;">
@@ -52,19 +54,23 @@
         </div>
         <div class="row">
           <div class="col-2">
-            <h1>Vaccine Tracker</h1>
+          	<div class="maskimage">
+          		<img src="static/images/manwithmask.png" style="display: flex;
+          	    justify-content: center;
+          	    width: 160px;
+          	    height: 270px;
+          	    margin-left: 230px;">
+          	</div>
             <p>
-              The need of getting vaccinated is very essential during these
-              times in order to keep oneself away from Covid-19.
+              Getting vaccinated is the need of the hour in order to survive this pandemic.
             </p>
             <br />
             <p>
               Our website will help user check the availability of vaccination
-              slots for a specific date by individually entering different PIN
-              codes or district details along with the age group (18+ or 45+).
-              If there are no slots available, users can subscribe to email
-              alert service to get notification as soon as slots are avaialble
-              in there area.
+              slots for a specific date by entering different PIN codes or 
+              district details along with the age group (18+ or 45+).
+              If there are no slots available, users can subscribe to our email
+              alert service to get notified as soon as the slots are avaialble.
             </p>
           </div>
 
@@ -75,24 +81,29 @@
       </div>
     </div>
 
+    <!-- Scroll Up Button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-chevron-circle-up"></i>
+    </button>
+
     <!-- brands -->
     <div class="brands">
       <div class="small-container">
         <div class="row">
           <div class="col-5">
-            <img src="static/img/brand-1.jpeg" alt="" />
+            <img src="static/img/brand-1.jpeg"/>
           </div>
           <div class="col-5">
-            <img src="static/img/brand-2.jpeg" alt="" />
+            <img src="static/img/brand-2.jpeg"/>
           </div>
           <div class="col-5">
-            <img src="static/img/Brand-3.png" alt="" />
+            <img src="static/img/Brand-3.png"/>
           </div>
           <div class="col-5">
-            <img src="static/img/brand-4.png" alt="" />
+            <img src="static/img/brand-4.png"/>
           </div>
           <div class="col-5">
-            <img src="static/img/brand-5.png" alt="" />
+            <img src="static/img/brand-5.png"/>
           </div>
         </div>
       </div>
@@ -103,46 +114,46 @@
       <div class="row">
         <div class="col-2">
           <h2 style="color: rgb(3, 47, 88)">Why should I be vaccinated ?</h2>
-          <p>
+          <p style="margin-bottom: 30px">
             In order to avoid any dobts about getting the COVID-19 vaccine,
             identify the following 4 benefits of COVID-19 vaccination:
           </p>
         </div>
-        <div class="col-2">
+        <!--<div class="col-2">
           <img src="static/img/doctor-1.jpg" alt="" />
-        </div>
+        </div>-->
       </div>
     </div>
 
     <div class="small-container">
       <div class="row">
         <div class="col-4">
-          <h3>Minimise the spread of viruses</h3>
-          <p>
+          <h3 style="width: 160; height: 84">Minimise the spread of viruses</h3>
+          <p style="width: 160; height: 104">
             Vaccine has been proven effective to prevent someone from getting
-            infected with coronavirus.
+            infected from coronavirus.
           </p>
         </div>
         <div class="col-4">
-          <h3>Forming Antibodies</h3>
-          <br />
-          <p>
-            COVID-19 vaccine proven to help shape antibody response for immune
+          <h3 style="width: 160; height: 84">Forming Antibodies</h3>
+          <br/>
+          <p style="width: 160; height: 104">
+            COVID-19 vaccine is proven to develop strong antibody response for immune
             system.
           </p>
-          <br />
+          <br/>
         </div>
         <div class="col-4">
-          <h3>Protecting People Nearby</h3>
-          <p>
-            The benefits of COVID-19 vaccination are the vaccine that we get can
-            also help protect people around us.
+          <h3 style="width: 160; height: 84">Protecting People Nearby</h3>
+          <br/>
+          <p style="width: 160; height: 104">
+            The COVID-19 vaccination also is a way to protect people around us.
           </p>
         </div>
         <div class="col-4">
-          <h3>Creating group Immunity</h3>
-          <br />
-          <p>
+          <h3 style="width: 160; height: 84">Creating group Immunity</h3>
+          <br/>
+          <p style="width: 160; height: 104">
             COVID-19 vaccination is also beneficial for creating group immunity
             or herd immunity.
           </p>
@@ -155,12 +166,7 @@
       <div class="row">
         <div class="col-2"></div>
         <div class="col-2">
-          <h2 style="color: rgb(3, 47, 88)">Preparations Before Vaccination</h2>
-          <p>
-            The success of vaccines is strongly influenced by the strength of
-            the body's immune system. Therefore, there are several things that
-            can be tried to make the COVID-19 vaccine work :
-          </p>
+          <h3 style="color: rgb(3, 47, 88); margin-left: 34px;">Few things to keep in mind before you go for vaccination:</h3>
         </div>
       </div>
     </div>
@@ -253,7 +259,6 @@
           </div>
           <div class="footer-col-2">
             <h1>Vaccine Tracker</h1>
-            <p>Our goal is to help the world free from the ongoing pandemic.</p>
           </div>
           <div class="footer-col-4">
             <h3>Follow Us</h3>
@@ -284,6 +289,34 @@
         } else {
           MenuItems.style.maxHeight = "0px";
         }
+      }
+    </script>
+
+    <!-- Script for Scroll Button -->
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
       }
     </script>
   </body>

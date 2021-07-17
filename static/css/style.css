@@ -5,9 +5,9 @@
 }
 body {
   font-family: "Poppins", sans-serif !important;
-  background-image: url("img/bg-1.jpg") !important;
-  background-size: cover;
-  background-repeat: no-repeat;
+  /*background-image: url("img/bg-1.jpg") !important;*/
+  /*background-size: cover;
+  background-repeat: no-repeat;*/
   /* background-color: rgb(202, 247, 232) !important; */
 }
 #search {
@@ -20,11 +20,13 @@ body {
 #search:hover {
   background-color: #03212c;
 }
+
 .navbar {
   display: flex;
   align-items: center;
   padding: 20px;
 }
+
 nav {
   flex: 1;
   text-align: right;
@@ -64,11 +66,6 @@ p {
   flex-basis: 50%;
   min-width: 300px;
 }
-.col-2 img {
-  max-width: 100%;
-  height: 600px;
-  padding: 50px 0;
-}
 .col-2 h1 {
   font-size: 50px;
   line-height: 60px;
@@ -97,10 +94,8 @@ p {
 .col-5 img {
   width: 100%;
   cursor: pointer;
-  filter: grayscale(100%);
-}
-.col-5 img:hover {
-  filter: grayscale(0);
+  filter: url("filters.svg#filter-id");
+  filter: grayscale(0%);
 }
 
 /* Features */
