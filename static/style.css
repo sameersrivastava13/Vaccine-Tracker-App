@@ -10,6 +10,13 @@ body {
   background-repeat: no-repeat;
   /* background-color: rgb(202, 247, 232) !important; */
 }
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #075777;
+  border-radius: 30px;
+}
 #search {
   background-color: #075777;
   border-radius: 5px;
