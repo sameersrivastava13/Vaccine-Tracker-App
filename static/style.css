@@ -478,8 +478,19 @@ ul {
     color: #fff;
   }
   .menu-icon {
-    display: block;
+    display:flex;
     cursor: pointer;
+    
+  }
+  .name{
+    visibility: hidden;
+  }
+  li a:hover{
+    color:white;
+    text-underline-position: below;
+    text-underline-offset: transform scale(1.03);
+    z-index: 20;
+    
   }
 }
 
