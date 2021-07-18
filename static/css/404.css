@@ -1,16 +1,5 @@
 body{
-    background-color: rgb(198, 206, 206);
-}
-
-.d1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 500px;
-    width: 600px;
-    background-color:rgb(247, 255, 255);
-    
+    background-color: whitesmoke
 }
 
 .p1,.p2,.p3{
@@ -36,8 +25,22 @@ p{
 .center {
     margin: 0;
     position: absolute;
-    top: 79%;
+    top: 69%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+
