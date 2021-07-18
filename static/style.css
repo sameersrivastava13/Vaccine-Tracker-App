@@ -8,7 +8,6 @@ body {
   background-image: url(img/bg-1.jpg) !important;
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-color: rgb(202, 247, 232) !important; */
 }
 ::-webkit-scrollbar{
   width: 15px;
