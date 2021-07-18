@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vaccine Tracker</title>
     <link rel="stylesheet" href="static/style.css" />
+    <link rel="icon" href="static/images/fav.png" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -18,38 +19,44 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
+
     <div class="header">
       <div class="container">
         <div class="navbar">
           <div class="logo">
             <a href="index.html">
-              <h1>Vaccine Tracker</h1>
+              <div class="header-logo">
+                <a href="index.html"><img class="image" img src="static/images/favi.png"><div class="name">VACCINE TRACKER</div></a>
+                
+             </div>
+             
             </a>
           </div>
           <nav>
             <ul id="MenuItems">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="contact.html">Latest News</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              
+              <li><a href="#Home">Home</a></li>
+              <li><a href="https://www.news18.com/coronavirus-latest-news/" target="_blank">Latest News</a></li>
+              <li><a href="#end">Contact</a></li>
               <li>
                 <select name="" id="search" onchange="location = this.value;">
                   <option value="">Vaccine Tracker</option>
                   <option value="#pincode">Search By PINCODE</option>
                   <option value="#district">Search By District</option>
                 </select>
-              </li>
-              <li></li>
-              <li></li>
             </ul>
           </nav>
           <img
             src="static/img/menu.png"
             alt=""
             class="menu-icon"
-            onclick="menutoggle()"
-          />
+            onclick="menutoggle()" />
         </div>
+
+
+<section id="Home">
         <div class="row">
           <div class="col-2">
             <h1>Vaccine Tracker</h1>
@@ -74,7 +81,7 @@
         </div>
       </div>
     </div>
-
+  </section>
     <!-- Scroll Up Button -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">
       <i class="fa fa-chevron-circle-up"></i>
@@ -243,6 +250,7 @@
     </div>
 
     <!-- footer -->
+    <section id="end">
     <div class="footer">
       <div class="container">
         <div class="row">
@@ -279,7 +287,7 @@
         </p>
       </div>
     </div>
-
+</section>
     <script>
       var MenuItems = document.getElementById("MenuItems");
       MenuItems.style.maxHeight = "0px";
