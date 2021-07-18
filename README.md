@@ -1,4 +1,3 @@
- readme
 
 # Vaccine Tracker Application - Pan India 💉
 
@@ -163,6 +162,4 @@ git push -u origin <your_branch_name>
 [MIT](https://github.com/sameersrivastava13/Vaccine-Tracker-App/blob/main/LICENSE)
 
                    
-                   Made with ❤️ for the people of India
-
-
+                   
