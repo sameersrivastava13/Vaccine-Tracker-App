@@ -82,7 +82,7 @@ git clone https://github.com/<your_user_name>/Vaccine-Tracker-App.git
 
 ```
 
-<img src="https://user-images.githubusercontent.com/75167785/125326844-1e522e80-e360-11eb-8e52-157f864eadd0.png"  width="500">
+<img src="screenshots/ss3.png"  width="800">
 
 
 **3.** Navigate to the project directory :file_folder: .
@@ -105,7 +105,7 @@ git remote -v
 **6.** Always take a pull from the upstream repository to your master branch to keep it at par with the main project(updated repository).
 
 ```
-git pull upstream master
+git pull upstream main
 ```
 
 **7.** Create a new branch.
@@ -137,13 +137,13 @@ git push -u origin <your_branch_name>
 
 **12.** To create a pull request, click on `compare and pull requests. Please ensure you compare your feature branch to the desired branch of the repo you are supposed to make a PR to.
 
-<img src="https://user-images.githubusercontent.com/75167785/125327277-8ef94b00-e360-11eb-9a48-3c2a3cf56c9c.png" width=600>
+<img src="screenshots/ss1.png" width=800>
 
 **13.** Add appropriate title and description to your pull request explaining your changes and efforts done.
 
 **14.** Click on `Create Pull Request`.
 
-<img src="https://user-images.githubusercontent.com/75167785/125327503-cff15f80-e360-11eb-8e0f-4da9687cf7bc.png" width=600>
+<img src="screenshots/ss2.png" width=800>
 
 **15** Voila :exclamation: You have made a PR to the Vaccine-Tracker-App project :boom: Sit back patiently and relax while the project maintainers review your PR. Please understand at times the time can vary from a few hours to a few days
 
