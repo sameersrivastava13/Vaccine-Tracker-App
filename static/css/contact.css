@@ -18,8 +18,11 @@ textarea {
   width: 15px;
 }
 ::-webkit-scrollbar-thumb{
-  background-color: #075777;
+  background-color: rgba(14, 105, 117, 0.6);
   border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: #555;
 }
 #search {
   background-color: #075777;
