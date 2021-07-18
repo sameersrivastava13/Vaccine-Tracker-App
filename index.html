@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vaccine Tracker</title>
     <link rel="stylesheet" href="static/style.css" />
+<<<<<<< HEAD
     <link rel="icon" href="static/images/fav.png" />
+=======
+    <link rel="stylesheet" href="/static/css/chat.css">
+    <link rel="stylesheet" href="/static/css/chatbot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+>>>>>>> e5cd88a3f3a5e833aa41ff5f8e882072822187be
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -18,10 +25,31 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous">
+    </script>
+
   </head>
 
   <body>
 
+<<<<<<< HEAD
+=======
+    <!-- prloader start  -->
+    <div id="spinner-wrapper">
+      <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+      </div>
+    </div>
+    <!-- prloader End  -->
+
+
+>>>>>>> e5cd88a3f3a5e833aa41ff5f8e882072822187be
     <div class="header">
       <div class="container">
         <div class="navbar">
@@ -36,10 +64,16 @@
           </div>
           <nav>
             <ul id="MenuItems">
+<<<<<<< HEAD
               
               <li><a href="#Home">Home</a></li>
               <li><a href="https://www.news18.com/coronavirus-latest-news/" target="_blank">Latest News</a></li>
               <li><a href="#end">Contact</a></li>
+=======
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Latest News</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+>>>>>>> e5cd88a3f3a5e833aa41ff5f8e882072822187be
               <li>
                 <select name="" id="search" onchange="location = this.value;">
                   <option value="">Vaccine Tracker</option>
@@ -82,6 +116,52 @@
       </div>
     </div>
   </section>
+
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+      <button id="chat-button" type="button" class="collapsible">Chat with us!
+          <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+      </button>
+
+      <div class="content">
+          <div class="full-chat-block">
+              <!-- Message Container -->
+              <div class="outer-container">
+                  <div class="chat-container">
+                      <!-- Messages -->
+                      <div id="chatbox">
+                          <h5 id="chat-timestamp"></h5>
+                          <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                      </div>
+
+                      <!-- User input box -->
+                      <div class="chat-bar-input-block">
+                          <div id="userInput">
+                              <input id="textInput" class="input-box" type="text" name="msg"
+                                  placeholder="Tap 'Enter' to send a message">
+                              <p></p>
+                          </div>
+
+                          <div class="chat-bar-icons">
+                              <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                  onclick="heartButton()"></i>
+                              <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                  onclick="sendButton()"></i>
+                          </div>
+                      </div>
+
+                      <div id="chat-bar-bottom">
+                          <p></p>
+                      </div>
+
+                  </div>
+              </div>
+
+          </div>
+      </div>
+
+  </div>
+
     <!-- Scroll Up Button -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">
       <i class="fa fa-chevron-circle-up"></i>
@@ -324,8 +404,34 @@
       // When the user clicks on the button, scroll to the top of the document
       function topFunction() {
         document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+        document.documentElement.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
       }
     </script>
+
+    </script>
+    
+    <script>
+      //Preloader Start
+      $(document).ready(function () {
+
+        preloaderFadeOutTime = 3000;
+
+        function hidePreloader() {
+          var preloader = $('#spinner-wrapper');
+          preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+      });
+
+
+    </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/static/scripts/responses.js"></script>
+<script src="/static/scripts/chat.js"></script>
+
   </body>
 </html>
