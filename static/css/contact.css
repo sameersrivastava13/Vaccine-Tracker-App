@@ -13,6 +13,13 @@ input,
 textarea {
   font-family: "Poppins", sans-serif;
 }
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #075777;
+  border-radius: 30px;
+}
 #search {
   background-color: #075777;
   border-radius: 5px;
