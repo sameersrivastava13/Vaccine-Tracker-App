@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
 
-body{
+body {
+  font-family: "Poppins", sans-serif;
   background-color: #fafafa;
 }
 input,
@@ -42,6 +43,9 @@ nav ul li {
 }
 a {
   text-decoration: none;
+  color: #555;
+}
+p {
   color: #555;
 }
 .menu-icon {
@@ -334,7 +338,7 @@ textarea.input {
 }
 
 @media (max-width: 850px) {
-  .container{
+  .container {
     margin-top: 200px;
   }
   .form {
@@ -446,7 +450,7 @@ textarea.input {
 /* --------------media query for menu------------------ */
 
 @media only screen and (max-width: 800px) {
-  .container{
+  .container {
     margin-top: 150px;
   }
   nav ul {
