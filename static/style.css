@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+body{
   font-family: "Poppins", sans-serif !important;
   background-image: url(img/bg-1.jpg) !important;
   background-size: cover;
@@ -502,7 +502,7 @@ ul {
     font-size: 26px;
     line-height: 32px;
   }
-  .cart-info p {
+  .cart-info p{
     display: none;
   }
 }

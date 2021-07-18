@@ -4,7 +4,7 @@
   box-sizing: border-box;
   scroll-behavior:smooth;
 }
-body {
+body{
   font-family: "Poppins", sans-serif !important;
   background-image: url("img/bg-1.jpg") !important;
   background-size: cover;
