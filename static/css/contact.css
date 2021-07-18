@@ -24,6 +24,7 @@ textarea {
 ::-webkit-scrollbar-thumb:hover{
   background-color: #555;
 }
+
 #search {
   background-color: #075777;
   border-radius: 5px;
