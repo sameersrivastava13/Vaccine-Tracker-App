@@ -1,0 +1,46 @@
+body{
+    background-color: whitesmoke
+}
+
+.p1,.p2,.p3{
+    font-size: 100px;
+    
+}
+
+p{
+    text-align: center;
+    padding: 45px 0;
+}
+
+.p2{
+    color: rgb(72, 139, 197);
+}
+
+.p{
+    text-align: center;
+    padding: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.center {
+    margin: 0;
+    position: absolute;
+    top: 69%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+
