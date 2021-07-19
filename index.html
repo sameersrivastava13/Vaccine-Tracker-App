@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
     <title>Vaccine Tracker</title>
     <link rel="stylesheet" href="static/style.css" />
-    <link rel="stylesheet" href="static/css/chat.css">
-    <link rel="stylesheet" href="static/css/chatbot.css">
+
+    <link rel="icon" href="static/images/fav.png" />
+    <link rel="stylesheet" href="/static/css/chat.css">
+    <link rel="stylesheet" href="/static/css/chatbot.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link
@@ -46,32 +48,37 @@
         <div class="navbar">
           <div class="logo">
             <a href="index.html">
-              <h1>Vaccine Tracker</h1>
+              <div class="header-logo">
+                <a href="index.html"><img class="image" img src="static/images/favi.png"><div class="name">VACCINE TRACKER</div></a>
+                
+             </div>
+             
             </a>
           </div>
           <nav>
             <ul id="MenuItems">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#">Latest News</a></li>
-              <li><a href="./contact.html">Contact</a></li>
+
+              
+              <li><a href="#Home">Home</a></li>
+              <li><a href="https://www.news18.com/coronavirus-latest-news/" target="_blank">Latest News</a></li>
+              <li><a href="contact.html" target="_blank">Contact</a></li>
               <li>
                 <select name="" id="search" onchange="location = this.value;">
                   <option value="">Vaccine Tracker</option>
                   <option value="#pincode">Search By PINCODE</option>
                   <option value="#district">Search By District</option>
                 </select>
-              </li>
-              <li></li>
-              <li></li>
             </ul>
           </nav>
           <img loading="lazy"
             src="static/img/menu.png"
             alt=""
             class="menu-icon"
-            onclick="menutoggle()"
-          />
+            onclick="menutoggle()" />
         </div>
+
+
+<section id="Home">
         <div class="row">
           <div class="col-2">
             <h1>Vaccine Tracker</h1>
@@ -81,7 +88,7 @@
             </p>
             <br />
             <p>
-              Our website will help user check the availability of vaccination
+              Our website will help the users check the availability of vaccination
               slots for a specific date by individually entering different PIN
               codes or district details along with the age group (18+ or 45+).
               If there are no slots available, users can subscribe to email
@@ -96,6 +103,7 @@
         </div>
       </div>
     </div>
+  </section>
 
     <!-- CHAT BAR BLOCK -->
     <div class="chat-bar-collapsible">
@@ -306,6 +314,7 @@
     </div>
 
     <!-- footer -->
+    <section id="end">
     <div class="footer">
       <div class="container">
         <div class="row">
@@ -343,9 +352,71 @@
       </div>
     </div>
 
-<script src="static/js/index.js"></script>
+</section>
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <!-- Script for Scroll Button -->
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+    </script>
+
+    </script>
+    
+    <script>
+      //Preloader Start
+      $(document).ready(function () {
+
+        preloaderFadeOutTime = 3000;
+
+        function hidePreloader() {
+          var preloader = $('#spinner-wrapper');
+          preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+      });
+
+
+    </script>
+
 <script src="static/js/responses.js"></script>
 <script src="static/js/chat.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </body>

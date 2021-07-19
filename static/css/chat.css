@@ -5,7 +5,7 @@
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.collapsible {
+.collapsible{
     background-color: rgb(82, 151, 255);
     color: white;
     cursor: pointer;
@@ -19,7 +19,7 @@
     border-bottom: none;
 }
 
-.content {
+.content{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;

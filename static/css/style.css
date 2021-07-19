@@ -2,13 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior:smooth;
 }
-body {
+body{
   font-family: "Poppins", sans-serif !important;
   background-image: url("img/bg-1.jpg") !important;
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-color: rgb(202, 247, 232) !important; */
+
+}
+.nav{
+  background-color: #000;
 }
 ::-webkit-scrollbar{
   width: 15px;
@@ -21,7 +25,6 @@ body {
   background-color: #555;
 }
 #search {
-  background-color: #075777;
   border-radius: 5px;
   color: #fff;
   padding: 10px 15px;

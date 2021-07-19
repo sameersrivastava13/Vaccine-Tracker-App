@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+body{
   font-family: "Poppins", sans-serif !important;
   background-image: url(img/bg-1.jpg) !important;
   background-size: cover;
@@ -37,6 +37,75 @@ body {
 nav {
   flex: 1;
   text-align: right;
+}
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&display=swap');
+.name{
+  font-family: 'Encode Sans SC', sans-serif;
+  font-size:23px;
+  color: #797070;
+float:left;
+padding-left: 20px;
+padding-top: 10%;
+}
+
+li a{
+  font-size: 18px;
+}
+
+li:hover{
+  transform: scale(1.1);
+  transition: 0.5s all ease-in-out;
+}
+select{
+  font-size:18px;
+}
+li a:hover{
+  color:#39393b;
+  text-underline-position: below;
+  text-underline-offset: transform scale(1.03);
+  
+}
+ul li::after{
+  content: '';
+  height: 2px;
+  background:#424246;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+  width: 0%;
+}
+
+
+ul li:hover::after{
+  width: 100%;
+}
+.name:hover{
+  color:#434646 ;
+  font-weight:600;
+}
+.image {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.image:hover{
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+img .image{
+  padding-left: 0px;
+  margin-left:0px;
+}
+
+.image{
+  width:70px;
+  float:left;
+  height:70px;
+}
+.image:hover{
+  transform: scale(1.2);
+  transition: 0.5s all ease-in-out;
 }
 nav ul {
   display: inline-block;
@@ -409,8 +478,19 @@ ul {
     color: #fff;
   }
   .menu-icon {
-    display: block;
+    display:flex;
     cursor: pointer;
+    
+  }
+  .name{
+    visibility: hidden;
+  }
+  li a:hover{
+    color:white;
+    text-underline-position: below;
+    text-underline-offset: transform scale(1.03);
+    z-index: 20;
+    
   }
 }
 
@@ -433,7 +513,7 @@ ul {
     font-size: 26px;
     line-height: 32px;
   }
-  .cart-info p {
+  .cart-info p{
     display: none;
   }
 }
