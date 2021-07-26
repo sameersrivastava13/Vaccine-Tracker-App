@@ -233,6 +233,9 @@ h4 {
   flex-basis: 12%;
   text-align: center;
 }
+.footer-col-4 a {
+  text-decoration: none;
+}
 ul {
   list-style-type: none;
 }
