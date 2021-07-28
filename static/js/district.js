@@ -855,8 +855,8 @@ $("#inputState").change(function () {
     case "Tripura":
       optionsList = Tripura;
       break;
-    case "Uttaranchal":
-      optionsList = Uttaranchal;
+    case "Uttarakhand":
+      optionsList = Uttarakhand;
       break;
     case "Uttar Pradesh":
       optionsList = UttarPradesh;
