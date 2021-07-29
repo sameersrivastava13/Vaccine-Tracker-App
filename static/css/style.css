@@ -2,26 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
-body{
+body {
   font-family: "Poppins", sans-serif !important;
   background-image: url("static/img/bg-1.jpg") !important;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
-.nav{
+.nav {
   background-color: #000;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 15px;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: rgba(14, 105, 117, 0.6);
   border-radius: 30px;
 }
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
   background-color: #555;
 }
 #search {
@@ -110,11 +109,11 @@ p {
 .col-5 img {
   width: 100%;
   cursor: pointer;
-  filter: grayscale(100%); 
+  filter: grayscale(100%);
 }
 
 .col-5 img:hover {
-  filter: grayscale(0); 
+  filter: grayscale(0);
 }
 
 /* Features */
