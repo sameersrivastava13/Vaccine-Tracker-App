@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+    <title>Vaccine Tracker</title>
+    <link rel="stylesheet" href="static/style.css" />
+
+    <link rel="icon" href="static/images/fav.png" />
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/chatbot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous">
+    </script>
+ 
+  </head>
+  <body>
+
+    <!-- prloader start  -->
+    <div id="spinner-wrapper">
+      <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+      </div>
+    </div>
+
+    <!-- prloader End  -->
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html">
+              <div class="header-logo">
+                <a href="index.html"><img class="image" img src="static/images/favi.png"><div class="name">VACCINE TRACKER</div></a>
+                
+             </div>
+             
+            </a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+
+              
+              <li><a href="#Home">Home</a></li>
+              <li><a href="https://www.news18.com/coronavirus-latest-news/" target="_blank">Latest News</a></li>
+              <li><a href="contact.html" target="_blank">Contact</a></li>
+              <li><a href="aboutus.html" target="_blank">About Us</a></li>
+              <li>
+                <select name="" id="search" onchange="location = this.value;">
+                  <option value="">Vaccine Tracker</option>
+                  <option value="#pincode">Search By PINCODE</option>
+                  <option value="#district">Search By District</option>
+                </select>
+            </ul>
+          </nav>
+          <img loading="lazy"
+            src="static/img/menu.png"
+            alt=""
+            class="menu-icon"
+            onclick="menutoggle()" />
+        </div>
+
+
+<section id="Home">
+        <div class="row">
+          <div class="col-2">
+            <h1>Vaccine Tracker</h1>
+            <p>
+              The need of getting vaccinated is very essential during these
+              times in order to keep oneself away from Covid-19.
+            </p>
+            <br />
+            <p>
+              Our website will help the users check the availability of vaccination
+              slots for a specific date by individually entering different PIN
+              codes or district details along with the age group (18+ or 45+).
+              If there are no slots available, users can subscribe to email
+              alert service to get notification as soon as slots are avaialble
+              in there area.
+            </p>
+          </div>
+
+          <div class="col-2">
+            <img loading="lazy" src="static/img/vaccine-bg.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+      <button id="chat-button" type="button" class="collapsible">Chat with us!
+          <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+      </button>
+
+      <div class="content">
+          <div class="full-chat-block">
+              <!-- Message Container -->
+              <div class="outer-container">
+                  <div class="chat-container">
+                      <!-- Messages -->
+                      <div id="chatbox">
+                          <h5 id="chat-timestamp"></h5>
+                          <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                      </div>
+
+                      <!-- User input box -->
+                      <div class="chat-bar-input-block">
+                          <div id="userInput">
+                              <input id="textInput" class="input-box" type="text" name="msg"
+                                  placeholder="Tap 'Enter' to send a message">
+                              <p></p>
+                          </div>
+
+                          <div class="chat-bar-icons">
+                              <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                  onclick="heartButton()"></i>
+                              <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                  onclick="sendButton()"></i>
+                          </div>
+                      </div>
+                      <div id="chat-bar-bottom">
+                          <p></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <!-- Scroll Up Button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-chevron-circle-up"></i>
+    </button>
+
+    <!-- brands -->
+    <div class="brands">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-5">
+            <img loading="lazy" src="static/img/brand-1.jpeg" alt="" />
+          </div>
+          <div class="col-5">
+            <img loading="lazy" src="static/img/brand-2.jpeg" alt="" />
+          </div>
+          <div class="col-5">
+            <img loading="lazy" src="static/img/Brand-3.png" alt="" />
+          </div>
+          <div class="col-5">
+            <img loading="lazy" src="static/img/brand-4.png" alt="" />
+          </div>
+          <div class="col-5">
+            <img loading="lazy" src="static/img/brand-5.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="small-container">
+      <div class="row">
+        <div class="col-2">
+          <h2 style="color: rgb(3, 47, 88)">Why should I be vaccinated ?</h2>
+          <p>
+            In order to avoid any dobts about getting the COVID-19 vaccine,
+            identify the following 4 benefits of COVID-19 vaccination:
+          </p>
+        </div>
+        <div class="col-2">
+          <img loading="lazy" src="static/img/doctor-1.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="small-container">
+      <div class="row">
+        <div class="col-4">
+          <h3>Minimise the spread of viruses</h3>
+          <p>
+            Vaccine has been proven effective to prevent someone from getting
+            infected with coronavirus.
+          </p>
+        </div>
+        <div class="col-4">
+          <h3>Forming Antibodies</h3>
+          <br />
+          <p>
+            COVID-19 vaccine proven to help shape antibody response for immune
+            system.
+          </p>
+          <br />
+        </div>
+        <div class="col-4">
+          <h3>Protecting People Nearby</h3>
+          <p>
+            The benefits of COVID-19 vaccination are the vaccine that we get can
+            also help protect people around us.
+          </p>
+        </div>
+        <div class="col-4">
+          <h3>Creating group Immunity</h3>
+          <br />
+          <p>
+            COVID-19 vaccination is also beneficial for creating group immunity
+            or herd immunity.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Preparation -->
+    <div class="small-container">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-2">
+          <h2 style="color: rgb(3, 47, 88)">Preparations Before Vaccination</h2>
+          <p>
+            The success of vaccines is strongly influenced by the strength of
+            the body's immune system. Therefore, there are several things that
+            can be tried to make the COVID-19 vaccine work :
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <div class="prep">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <img loading="lazy" src="static/img/person-1.jpg" alt="" />
+          </div>
+          <div class="col-2">
+            <div class="prat col-md-6">
+              <div class="icon-box">
+                <!-- <i class="fa fa-check-square"></i> -->
+                <h4>
+                  <i class="fa fa-times-circle" style="font-size: 40px"></i
+                  >&nbsp Avoid alcoholic beverages<i
+                    class="last fa fa-heart"
+                    style="font-size: 20px"
+                  ></i>
+                </h4>
+              </div>
+            </div>
+            <div class="prat col-md-6 mt-4 mt-md-0">
+              <div class="icon-box">
+                <i class="icofont-chart-bar-graph"></i>
+                <h4>
+                  <i class="fa fa-times-circle" style="font-size: 40px"></i
+                  >&nbsp Avoid Stress<i
+                    class="last fa fa-heart"
+                    style="font-size: 20px"
+                  ></i>
+                </h4>
+              </div>
+            </div>
+            <div class="prat col-md-6 mt-4 mt-md-0">
+              <div class="icon-box">
+                <h4>
+                  <i class="fa fa-bar-chart" style="font-size: 40px"></i>&nbsp
+                  Eat Healthy food<i
+                    class="last fa fa-heart"
+                    style="font-size: 20px"
+                  ></i>
+                </h4>
+              </div>
+            </div>
+            <div class="prat col-md-6 mt-4 mt-md-0">
+              <div class="icon-box">
+                <i class="icofont-settings"></i>
+                <h4>
+                  <i class="fa fa-check-circle" style="font-size: 40px"></i
+                  >&nbsp Get enough sleep<i
+                    class="last fa fa-heart"
+                    style="font-size: 20px"
+                  ></i>
+                </h4>
+              </div>
+            </div>
+            <div class="prat col-md-6 mt-4 mt-md-0">
+              <div class="icon-box">
+                <i class="icofont-settings"></i>
+                <h4>
+                  <i class="fa fa-check-circle" style="font-size: 40px"></i
+                  >&nbsp Excercise or physical activity<i
+                    class="last fa fa-heart"
+                    style="font-size: 20px"
+                  ></i>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <section id="end">
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android</p>
+            <div class="app-logo">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.rawat.sanjeevaniapp"
+                ><img src="static/img/play-store.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <h1>Vaccine Tracker</h1>
+            <p>Our goal is to help the world free from the ongoing pandemic.</p>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><i class="fa fa-facebook-square"></i> Facebook</li>
+              <li><i class="fa fa-twitter-square"></i> Twitter</li>
+              <li><i class="fa fa-instagram"></i> Intagram</li>
+              <li><i class="fa fa-youtube-play"></i> YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">
+          <i class="fa fa-copyright"></i> Copyright 2021 - All rights reserved -
+          Made with
+          <i class="fa fa-heart" aria-hidden="true" style="color: red"></i
+          >&nbsp; for people of India
+        </p>
+      </div>
+    </div>
+
+</section>
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <!-- Script for Scroll Button -->
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+    </script>
+
+    </script>
+    
+    <script>
+      //Preloader Start
+      $(document).ready(function () {
+
+        preloaderFadeOutTime = 3000;
+
+        function hidePreloader() {
+          var preloader = $('#spinner-wrapper');
+          preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+      });
+
+
+    </script>
+
+<script src="static/js/responses.js"></script>
+<script src="static/js/chat.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</body>
+</html>
