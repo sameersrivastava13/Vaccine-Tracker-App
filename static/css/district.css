@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.districtBody {
+  background: radial-gradient(#fff, #8bddf7);
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(14, 105, 117, 0.6);
+  border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&display=swap");
+.name {
+  font-family: "Encode Sans SC", sans-serif;
+  font-size: 23px;
+  color: #797070;
+  float: left;
+  padding-left: 20px;
+  padding-top: 10%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.prep row {
+  background-color: #000;
+  color: white;
+}
+
+#Home h1 {
+  position: absolute;
+  left: 20px;
+  top: 100px;
+}
+
+.mainSearch {
+  min-width: 200px;
+  margin-top: 300px;
+}
+
+@media only screen and (max-width: 800px) {
+  .mainSearch {
+    position: absolute;
+    left: 80px;
+    width: 50%;
+    margin-top: 20px;
+  }
+  html {
+    background: #8bddf7;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .row {
+    text-align: center;
+  }
+
+  .mainSearch {
+    position: absolute;
+    left: 80px;
+    top: 10;
+    width: 50%;
+    margin-top: 20px;
+  }
+  html {
+    background: #8bddf7;
+  }
+}

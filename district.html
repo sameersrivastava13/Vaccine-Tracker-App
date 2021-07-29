@@ -1,96 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
-      />
-      <title>Search by district</title>
-      <link rel="stylesheet" href="static/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+    />
+    <title>Search by district</title>
+    <link rel="stylesheet" href="static/css/district.css" />
 
-      <link rel="icon" href="static/images/fav.png" />
-      <link rel="stylesheet" href="/static/css/chat.css" />
-      <link rel="stylesheet" href="/static/css/chatbot.css" />
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      />
-      <link
-        rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous"
-      />
+    <link rel="icon" href="static/images/fav.png" />
+    <link rel="stylesheet" href="/static/css/chat.css" />
+    <link rel="stylesheet" href="/static/css/chatbot.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
 
-      <link
-        rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-        crossorigin="anonymous"
-      />
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet"
-      />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-      <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous"
-      ></script>
-    </head>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
-    <div class="header">
-      <div class="container">
-        <div class="navbar">
-          <div class="logo">
-            <a href="index.html">
-              <div class="header-logo">
-                <a href="index.html"
-                  ><img class="image" img src="static/images/favi.png" />
-                  <div class="name">VACCINE TRACKER</div></a
-                >
-              </div>
-            </a>
-          </div>
-          <nav>
-            <ul id="MenuItems">
-              <li><a href="#Home">Home</a></li>
-              <li>
-                <a
-                  href="https://www.news18.com/coronavirus-latest-news/"
-                  target="_blank"
-                  >Latest News</a
-                >
-              </li>
-              <li><a href="contact.html" target="_blank">Contact</a></li>
-              <li>
-                <select name="" id="search" onchange="location = this.value;">
-                  <option value="">Vaccine Tracker</option>
-                  <option value="#pincode">Search By PINCODE</option>
-                  <option value="district.html">Search By District</option>
-                </select>
-              </li>
-            </ul>
-          </nav>
-          <img
-            loading="lazy"
-            src="static/img/menu.png"
-            alt=""
-            class="menu-icon"
-            onclick="menutoggle()"
-          />
-        </div>
-      </div>
-    </div>
+  <style>
+    .intro h1 {
+      position: absolute;
+      left: 20px;
+      top: 115px;
+    }
+  </style>
+  <body class="districtBody">
     <div class="intro">
       <h1>Vaccine Tracker By District Name - All India</h1>
-      <!-- <h2>Check your nearest vaccination center and slots availability</h2> -->
     </div>
     <div class="mainSearch">
       <form id="form">
@@ -211,18 +172,6 @@
       integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
       crossorigin="anonymous"
     ></script>
-    <script>
-      var MenuItems = document.getElementById("MenuItems");
-      MenuItems.style.maxHeight = "0px";
-      function menutoggle() {
-        if (MenuItems.style.maxHeight == "0px") {
-          MenuItems.style.maxHeight = "200px";
-          MenuItems.style.opacity = 100;
-        } else {
-          MenuItems.style.maxHeight = "0px";
-        }
-      }
-    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </body>
 </html>

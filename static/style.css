@@ -9,6 +9,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -230,20 +231,10 @@ p {
 
 /* search by district styles */
 
-.intro h1 {
-  position: absolute;
-  left: 20px;
-  top: 115px;
-}
-
 #Home h1 {
   position: absolute;
   left: 20px;
   top: 100px;
-}
-
-.mainSearch {
-  min-width: 200px;
 }
 
 @-webkit-keyframes sk-foldCubeAngle {
@@ -509,11 +500,6 @@ ul {
     text-underline-offset: transform scale(1.03);
     z-index: 20;
   }
-  .mainSearch {
-    position: absolute;
-    left: 80px;
-    width: 50%;
-  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -537,10 +523,5 @@ ul {
   }
   .cart-info p {
     display: none;
-  }
-  .mainSearch {
-    position: absolute;
-    left: 80px;
-    width: 50%;
   }
 }
