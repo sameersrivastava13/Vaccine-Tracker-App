@@ -46,15 +46,13 @@ h2{
 .d5{
     height: 50px;
     width: 150px;
-    background-color: #4b99a1;
+
     
     width:15%;margin:0 auto
 }
 .d4{
     height: 50px;
-    width: 150px;
-    background-color: #4b99a1;
-    
+    width: 150px;    
     width:15%;margin:0 auto
 
 }
@@ -75,4 +73,8 @@ h2{
     height: 60px;
     width: 70px;
     padding-left: 10px;
+}
+
+body{
+    scroll-behavior: smooth;
 }
